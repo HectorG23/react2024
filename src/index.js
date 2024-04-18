@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const nombre = 'Maikol suka';
+const user={
+  Nombre: 'McDiozzz ',
+  Apellido: 'Barbero, Rockero, Punketo, Trapeador, Tatuador, Constructo, Ingeniero, Celador, Asistente de abogado, pipiraña',
+  Edad: 28,
+  avatar:'https://media.licdn.com/dms/image/C4E03AQFuz9wo0RYh0A/profile-displayphoto-shrink_400_400/0/1667940240794?e=2147483647&v=beta&t=UOrfvqIAuGy_VCYNXQzLEE2wBkSTwa1sQRNWNPvHe5k'
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function datosuser(user){
+  return user.Nombre+' '+user.Apellido+''+user.Edad
+}
+
+const element = (
+  <div>
+    <h1> Hellos mama huevo, {datosuser(user)}</h1>
+<img src={user.avatar}/>
+</div>
+)
+//const element = <h1>Hello,{datosuser(user)}</h1>;
+
+
+const contenedor= document.getElementById('root');
+ReactDOM.render(element,contenedor)

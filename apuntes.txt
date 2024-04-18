@@ -1,0 +1,6 @@
+root es que muestra todos los componentes
+
+descargar extenciones de:
+-Bracket,ES7,generate,pretier,React/redux, reactjs.simple react
+
+docuemntacion es reactjs: https://es.legacy.reactjs.org/docs/getting-started.html
