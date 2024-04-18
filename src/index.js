@@ -1,7 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import Componente from "./Componentes/CompClass";
 
-const nombre = 'Maikol suka';
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+
+
+
+)
+
+
+root.render( <Componente 
+  nombre="Mctazzzz" 
+  Profesiones="Sehasta hacerme la paja sin manos"
+  color='#f5f5f5'
+  />)
+
+
+/*const nombre = 'Maikol suka';
 const user={
   Nombre: 'McDiozzz ',
   Apellido: 'Barbero, Rockero, Punketo, Trapeador, Tatuador, Constructo, Ingeniero, Celador, Asistente de abogado, pipiraña',
@@ -18,9 +34,4 @@ const element = (
     <h1> Hellos mama huevo, {datosuser(user)}</h1>
 <img src={user.avatar}/>
 </div>
-)
-//const element = <h1>Hello,{datosuser(user)}</h1>;
-
-
-const contenedor= document.getElementById('root');
-ReactDOM.render(element,contenedor)
+)*/

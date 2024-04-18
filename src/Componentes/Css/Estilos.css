@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.back{
+    background: #000000;
+    height: 420px;
+    width: 110vh;
+}
+.Title1{
+    color: #cf1717;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Jacquard 24", system-ui;
+}
+
+.Img1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    clip-path: circle(50%);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
